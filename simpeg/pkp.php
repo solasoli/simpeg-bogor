@@ -1,0 +1,2 @@
+<p align="center"> <strong> Mohon maaf halaman ini dalam pengembangan </strong> </p>
+<div style="text-align: center;"><img src='http://simpeg.kotabogor.go.id/simpeg/images/under-construction.gif' width='200'  /></div>

@@ -1,0 +1,2 @@
+<h2> REKAPITULASI DATA PEGAWAI PEMERINTAH KOTA BOGOR TAHUN 2016</h2>
+<img src="img/rekap2016.jpg" width="95%">

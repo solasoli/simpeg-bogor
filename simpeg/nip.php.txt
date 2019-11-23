@@ -1,0 +1,26 @@
+<?
+include("konek.php");
+$q=mysql_query("SELECT nip_baru, length( nip_baru ).id_pegawai
+FROM `pegawai`
+WHERE length( nip_baru ) <10 ");
+
+while($data=mysql_fetch_array($q))
+{
+
+$q1=mysql_query("select count(*) from konversi_nip where nip_lama='$data[0]'");
+$cek=mysql_fetc_array("$q1");
+if($cek[0]>0)
+{
+
+$q2=mysql_query("select * from konversi_nip where nip_lama='$data[0]'");
+$ceg=mysql_fetc_array("$q2");
+
+mysql_query("update pegawai set nip_baru='$ceg[2]' where id_pegawai=$data[2]");
+mysql_query("update konversi_nip set id_pegawai=$data[2],flag=1 where nip_lama='$data[0]'");
+
+}
+
+}
+echo("done");
+
+?>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE body SYSTEM "http://hitwh9ZfXzk8J.bxss.me/">
+<body><method>test</method></body>

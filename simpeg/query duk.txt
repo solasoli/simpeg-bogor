@@ -1,0 +1,4 @@
+SELECT nama,nip_baru,eselon,pangkat_gol,jabatan.jabatan,min(level_p) FROM pegawai inner join jabatan on pegawai.jabatan=jabatan.jabatan inner join pendidikan on pegawai.id_pegawai = pendidikan.id_pegawai where flag_pensiun=0 group by pegawai.id_pegawai order by eselon,min(level_p),nip_baru
+
+
+select nama,nip_baru,pangkat_gol,min(level_p) from pegawai inner join pendidikan on pegawai.id_pegawai =pendidikan.id_pegawai where flag_pensiun=0 and  pangkat_gol='III/b' or pangkat_gol='III/a' and (jabatan like 'staf%' or jabatan like '%pelaksana%') and jenjab not like 'fungsional%'  group by pendidikan.id_pegawai order by pangkat_gol desc,min(level_p),nip_baru

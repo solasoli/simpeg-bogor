@@ -1,0 +1,119 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php 
+session_start();	
+if($_SESSION['pin'] != 'gundul')
+{
+	header("location:pin.php");
+}
+
+$unit_kerja = $_SESSION['user'][1];
+/*if($unit_kerja != 3566){
+	
+	header('Location: http://simpeg.kotabogor.go.id/');
+	//echo "unit kerja = ".$unit_kerja;
+}*/
+
+$request_ip = $_SERVER['REMOTE_ADDR'];
+	
+/*
+$allowed_ip = array(
+    '/^192\.168\.(\d+)\.(\d+)/', //for IP address in the range 122.244.0.0 - 122.244.255.255    
+);
+
+foreach( $allowed_ip as $ip ) {
+    if(!preg_match( $ip, $request_ip ) )       
+		return false;
+    }
+*/
+	//print_r($_SESSION['user'][1]);
+
+//error_reporting(E_ERROR | E_PARSE);
+//echo $_SERVER['SERVER_NAME'];
+
+
+
+
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Administrator Page</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="js/jquery.ausu-autosuggest.min.js"></script>
+
+
+
+	
+	
+
+<script>
+$(document).ready(function() {
+    $.fn.autosugguest({  
+           className: 'ausu-suggest',
+          methodType: 'POST',
+            minChars: 2,
+              rtnIDs: true,
+            dataFile: 'data.php'
+    });
+	
+
+});
+</script>
+
+</head>
+<body>
+	
+	<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="#">SIMPEG Kota Bogor</a>
+	    <ul class="nav">	      
+	    </ul>
+	    <form action="index2.php" method="POST" class="navbar-form pull-left">
+	      <div class="ausu-suggest">
+		  Nama / NIP Baru / NIP Lama / Unit Kerja: 
+		  <input type="text"name="countries" id="countries" autocomplete="off" class="span2">
+		  <input type="hidden" size="4" value="" name="countriesid" id="countriesid" autocomplete="off"  />
+		  <input name="submit" type="submit" value="cari" class="btn" />
+		  </div>		  
+			<?php //echo $_SESSION['user'] ?>
+		</form>
+	  </div>
+	  <div style="align:right">
+		
+	  </div>
+	</div>
+	
+	
+	
+    <div id="wrapper">
+       <form action="index2.php" method="POST">
+	   <table>
+	   <tr>
+	   <td nowrap>
+     
+		   <td>
+		   </tr>
+           </table>		                    	
+        
+       </form>
+       <div style="clear:both">
+      
+       </div>
+    </div>
+	<div align="center" style="clear:both">
+	<?
+	extract($_POST);
+	if(isset($countriesid))
+{
+echo("<iframe name=bebas width=100% height=800 src=dock2.php?id=$countriesid frameborder=0 scrolling=auto /> </iframe> ");
+}
+	?>
+	</div>
+</body>
+</html>

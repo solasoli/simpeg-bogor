@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript" src="../../js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" >
+	function pendidikan_insert(){
+		alert('');
+		//$("#btnPendiidkanInsert").disable();		
+		$.post('insert_pendidikan.php', {}, function(data){
+			$("#result").html(data);
+		});
+		//$("#btnPendiidkanInsert").enable();
+	}
+</script>
+<title>Perbaikan data</title>
+</head>
+<body>
+<table summary="" >
+<tr>
+<td width="50%">
+	<ul>
+		<li>Menambahkan pendidikan dari tabel mus dan mus2 jika yang ada di tabel pendidikan bukanlah pendidikan terakhir <br/><input
+		type="button" id="btnPendidikanInsert" value="Execute" onClick="pendidikan_insert()"/></li>	
+        <li>
+    		<a href="perbaikan_sk_cpns/index.php" >Perbaikan SK CPNS</a>
+    	</li>
+	</ul>    
+</td>
+<td width="50%">
+	Result:
+	<textarea style="width: 100%" id="result"></textarea>
+</td>
+</tr>
+</table>
+</body>
+</html>

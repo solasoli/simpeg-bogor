@@ -1,0 +1,112 @@
+/** container */
+
+.content{
+	padding: 20px 40px 20px 60px;
+	border: 1px #ccc solid;
+	position: relative;
+	margin: 0 0 10px 0;
+	background-color: #fdfdfd !important;
+	min-height: 100px;
+}
+/* end of container */
+
+
+/* Form Validation */
+label.error {
+	padding: 3px 4px 3px 4px;
+	color: #c93605;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px rgba(164, 44, 4, 0.20);
+    -moz-text-shadow: 0px 1px 1px rgba(164, 44, 4, 0.20);
+    -webkit-text-shadow: 0px 1px 1px rgba(164, 44, 4, 0.20);
+    font-size:11px;
+ }
+
+form input.error {border: 1px solid #ED7A53 !important;}
+form input.valid {border: 1px solid #9FC569 !important;}
+
+.controls label.error {
+	margin-top:-20px;
+}
+.controls .selector label.error {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	margin:0;
+}
+ /* end of Form validation */
+ 
+ /* autocomplete css */
+ 
+.autocomplete-suggestions { 
+	border: 1px solid #999; 
+	background: #FFF; 
+	cursor: default; 
+	overflow: auto; 
+	-webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	-moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64)!important; 
+}
+.autocomplete-suggestion { 
+	padding: 2px 5px; 
+	white-space: nowrap; 
+	overflow: hidden; 
+}
+
+.autocomplete-selected { 
+	background: #F0F0F0; 
+}
+.autocomplete-suggestions strong { 
+	font-weight: normal; color: #3399FF; 
+}
+
+ /* end of autocomplete */
+ 
+ /* hidden-print   */
+ 
+ #photo{
+	height: 2.5cm !important;
+	width: 2cm !important;
+  }
+  
+ #barcode{
+	width: 2cm !important;
+ }
+  
+ #logo-card{
+	height: 1.5cm !important;
+	width: 1.5cm !important;
+ }
+ 
+ @media print {
+  .hidden-print {
+    display: none !important;
+  }
+    
+
+   div#card-layout{
+	  font-family: sans-serif;
+	  -webkit-text-size-adjust: 150%;
+		  -ms-text-size-adjust: 150%;
+	}
+	#barcode{
+		width: 2cm !important;
+	}
+	
+	/*
+	div#card-layout {
+		height: 85.60mm;
+		width: 53.98mm;
+	 }
+	 */
+	 
+	
+	div.page-break {page-break-after: always;}
+	.panel {border: 0px;}
+	.table-bordered th,
+	.table-bordered td {
+		border: 1px solid #000 !important;
+		font-size: 9pt !important;
+	}
+}
+ /* end of hidden print */

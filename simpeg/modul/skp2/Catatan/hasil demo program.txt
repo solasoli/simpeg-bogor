@@ -1,0 +1,12 @@
+
+Tanggal 21 November 2014
+bu nia : 198205212006042020
+bu ana	: 197403171994032003
+
+- uraian target dimunculkan di header
+- pegawai dengan status cpns pangkatnya tidak muncul di laporan akhir
+- kalo realisasi belum di masukan maka pegawai belum bisa membuat skp baru
+- kalo pejabat penilai belum menyetujui skp bawahannya, 
+  maka pejabat penilai belum bisa membuat skp nya
+- periode editable untuk memungkinkan mutasi pejabat struktural
+- skp harus bisa di akses publik

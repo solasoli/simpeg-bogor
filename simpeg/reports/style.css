@@ -1,0 +1,16 @@
+body{
+font-family: "arial";
+}
+
+.number{
+text-align: right;
+}
+
+h1{
+font-size: 12pt;
+}
+
+th, td{
+padding: 3px 3px 3px 3px;
+font-size: 10pt;
+}

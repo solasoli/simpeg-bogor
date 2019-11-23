@@ -1,0 +1,13 @@
+<?php 
+
+mysql_connect("localhost","simpeg", "Madangkara2017");
+mysql_select_db("simpeg");
+$q=mysql_query("select id_pegawai from pegawai where flag_pensiun=0");
+while($data=mysql_fetch_array($q))
+{
+$qb=mysql_query("select id_bidang from pendidikan where id_pegawai =$data[0] and level_p <=6");	
+	$bel=mysql_fetch_array($qb);
+	
+	
+}
+?>

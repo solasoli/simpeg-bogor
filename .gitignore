@@ -1,0 +1,34 @@
+
+# Elastic Beanstalk Files
+#.elasticbeanstalk/*
+#!.elasticbeanstalk/*.cfg.yml
+#!.elasticbeanstalk/*.global.yml
+
+# SIMPEG Admin
+admin/koncil.php
+
+# SIMPEG Ekinerja2
+ekinerja2/application/config/config.php
+ekinerja2/application/config/database.php
+
+exh/
+simpeg/assets/berkas_perubahan_keluarga/
+simpeg/cunda/batch/
+simpeg/cunda/save/
+simpeg/extjs/
+simpeg/files2/
+simpeg/foto-ori/
+simpeg/proper/
+simpeg2/.DS_Store
+simpeg2/.gitignore
+simpeg2/.svn/
+simpeg2/_database/
+simpeg2/assets/DataTables/examples/
+simpeg2/assets/metro/docs/
+simpeg2/assets/upload_berkas/
+
+simpeg/berkas
+simpeg/simpeg/
+
+simpeg2/.htaccess
+simpeg2/application/config/config.php

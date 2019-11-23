@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simpeg::Daftar Tim OPD</title>
+<style type="text/css">
+.bodas {
+	color: #FFF;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+	<h4>Daftar Tim OPD</h4>
+</div>
+<div>
+	<table>
+		<thead>
+		<tr>
+			<th>No</th>
+			<th>Nama</th>
+			<th>NIP</th>
+			<th>Jabatan</th>
+			<th>Unit Kerja</th>
+		</tr>
+		<thead>
+		<tbody>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+		</tbody>
+	<table>
+</div>
+</body>
+</html>
